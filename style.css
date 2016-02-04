@@ -1,15 +1,23 @@
- p
- {
+ p {
      color: green;
- }
+ } 
  
- .coffeeType
- {
+ .coffeeType {
     color: green; 
  }
- #siteHeader
- {
+ #siteHeader {
      color: green;
  }
  
+ .coffeetype a {
+ 
+     color: red;
+ }
+ 
+ a:link {
+ color: blue;}
+ 
+ a:visited {
+     color: purple;
+ }
  
