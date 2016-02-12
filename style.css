@@ -79,7 +79,7 @@ nav {
     text-decoration: none;
 }
 
-    .navlink.active {
+.navlink.active {
     }
 
 #welcomeimage {
@@ -89,7 +89,7 @@ nav {
 
 #coffeeofthemonth {
     float: right;
-    width: 290px;
+    width: 300px;
 }
 
 #welcometext {
@@ -102,7 +102,7 @@ nav {
     column-count: 2;
 }
 
-    #welcometext > header {
+ #welcometext > header {
         color: #603813;
         font-size: 15px;
         font-weight: bold;
