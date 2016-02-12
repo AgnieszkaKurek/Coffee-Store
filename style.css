@@ -102,7 +102,7 @@ nav {
     column-count: 2;
 }
 
- #welcometext > header {
+    #welcometext > header {
         color: #603813;
         font-size: 15px;
         font-weight: bold;
