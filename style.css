@@ -39,48 +39,9 @@ header {
     /*font-variant: small-caps;*/
 }
 
-nav {
-    height: 45px;
-    width: 100%;
-    /*background-color: #5c5045;*/
-    /*background: -webkit-linear-gradient(left, #603813, #341c05);*/ /* For Safari 5.1 to 6.0 */
-    /*background: -o-linear-gradient(right, #603813, #341c05);*/ /* For Opera 11.1 to 12.0 */
-    /*background: -moz-linear-gradient(right, #603813, #341c05);*/ /* For Firefox 3.6 to 15 */
-    /*background: linear-gradient(to right, #603813, #341c05);*/
-    margin-bottom: 5px;
-    margin-top: 20px;
-    padding-left: 5px;
-}
-
-    nav ul {
-        list-style: none;
-        padding: 0px;
-    }
-
-        nav ul li {
-            display: block;
-        }
-
-.backgroundgradient {
-    background: -webkit-linear-gradient(left, #603813, #341c05); 
-    background: -o-linear-gradient(right, #603813, #341c05); 
-    background: -moz-linear-gradient(right, #603813, #341c05); 
-    background: linear-gradient(to right, #603813, #341c05);
-}
 
 
-.navlink {
-    height: 35px;
-    margin-right: 10px;
-    font-size: 18px;
-    float: left;
-    padding-top: 12px;
-    color: white;
-    text-decoration: none;
-}
 
-.navlink.active {
-    }
 
 #welcomeimage {
     float: left;
@@ -89,7 +50,7 @@ nav {
 
 #coffeeofthemonth {
     float: right;
-    width: 300px;
+    width: 200px;
 }
 
 #welcometext {
@@ -200,28 +161,6 @@ nav {
     margin-top: 5px;
 }
 
-.addtocartbutton {
-    cursor: pointer;
-    padding: 4px 25px;
-    background: #603813;
-    border: 1px solid #381f09;
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    border-radius: 8px;
-    -webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
-    -moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
-    box-shadow: 0 0 4px rgba(0,0,0, .75);
-    color: #f3f3f3;
-    font-size: 0.8em;
-    width: 80px;
-}
-
-    .addtocartbutton:hover, .addtocartbutton:focus {
-        background-color: #512c0a;
-        -webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
-        -moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
-        box-shadow: 0 0 1px rgba(0,0,0, .75);
-    }
 
 
 footer {
@@ -377,8 +316,5 @@ fieldset > div
 	border: 2px solid #888888;
 }
 
-.submitbutton {
 
-
-}
     
