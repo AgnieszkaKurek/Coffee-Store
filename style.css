@@ -6,7 +6,13 @@
 }
 
 
+@font-face {
+    font-family: headerfont;
+    src: url('Lobster_1.3.otf');
+}
 
+
+ 
 
 header {
     font-weight: bold;
@@ -76,6 +82,7 @@ nav {
 
 
 #headername {
+    font-family: headerfont;
     font-size: 40px;
     font-family: headerfont;
     text-shadow: 5px 5px 5px #5f2c17;
