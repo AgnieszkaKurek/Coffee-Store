@@ -51,41 +51,50 @@
                    <p>
                        <label class="textlabel" for="firstNameInput">First Name</label>
                        <input id="firstNameInput" name="FirstName" type="text"
-                              autofocus="autofocus" class="textinput"/>
+                           placeholder="Enter your first name" 
+                           required="required"
+                           autofocus="autofocus" class="textinput" maxlength="30"/>
                    </p>
                    <p>
                        <label class="textlabel" for="lastNameInput">Last Name</label>
-                       <input id="lastNameInput" name="LastName" type="text"
-                              class="textinput" size="10" />
+                       <input id="lastNameInput" name="LastName" type="text" required="required"
+                              class="textinput" size="10" maxlength="50"/>
                    </p>
                    <p>
                        <label class="textlabel" for="emailInput">Email</label>
-                       <input class="emailInput" name="Email" type="email" class="textinput" />
+                       <input class="emailInput" name="Email" type="email" class="textinput"
+                        required="required"/>
                    </p>
                    <p>
                         <label class="textlabel" for="streetInput">Street</label>
-                        <input id="streetInput" name="Street" type="text" class="textinput" />
+                        <input id="streetInput" name="Street" type="text" class="textinput"
+                         required="required"/>
                     </p>
                     <p>
                         <label class="textlabel" for="numerInput">Numer</label>
-                        <input id="numberInput" name="Number" type="text" class="textinput" />
+                        <input id="numberInput" name="Number" type="text" class="textinput" 
+                         required="required"/>
                     </p>
                     <p>
                         <label class="textlabel" for="zipInput">ZIP</label>
-                        <input id="zipInput" name="ZIP" type="text" class="textinput" />
+                        <input id="zipInput" name="ZIP" type="text" class="textinput" 
+                         required="required"/>
                     </p>
                     <p>
                         <label class="textlabel" for="cityInput">City</label>
-                        <input id="cityInput" name="City" type="text" class="textinput" />
+                        <input id="cityInput" name="City" type="text" class="textinput" 
+                         required="required"/>
                         
                     </p>
                     <p>
                         <label class="textlabel" for="countryInput">Country</label>
-                        <input id="countryInput" name="Country" type="text" class="textinput" />
+                        <input id="countryInput" name="Country" type="text" class="textinput" 
+                        pattern="[a-za-z]{3}" required="required" />
                     </p>
                     <p>
                         <label class="textlabel" for="phoneInput">Phone Numer</label>
-                        <input id="phoneInput" name="PhoneNumber" type="text" class="textinput" />
+                        <input id="phoneInput" name="PhoneNumber" type="text" class="textinput" 
+                         required="required"/>
                     </p>
                     <p>     
                          <label class="textlabel" for="blogInput">Blog</label>
@@ -111,7 +120,9 @@
                 </p>
                 <p>
                    <label class="textlabel" for="bowInput">How many bows on the package?</label>
-                        <input id="bowInput" name="Bow" type="number" class="textinput" />
+                        <input id="bowInput" placeholder="Enter a value between 1 and 10" name="Bow"
+                         type="number" class="textinput" 
+                          min="1" max="10"/>
                 </p> 
                 
             </fieldset>
