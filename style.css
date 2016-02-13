@@ -56,9 +56,7 @@ nav {
     padding-top: 12px;
 }
 
-   .navlink.active{
-       
-   }
+  
 .backgroundgradient{
     background-color: #603813;
 }
@@ -75,6 +73,7 @@ nav {
 #headername {
     font-size: 40px;
     font-family: headerfont;
+    text-shadow: 5px 5px 5px #5f2c17;
     color: #603813;
     padding: 15px;
     margin: 8px 0px;
@@ -295,9 +294,7 @@ footer {
     float: right;
 }
 
-.productarticledescription {
-    text-wrap: normal;
-}
+
 
 .productarticleprice {
     font-size: 25px;
