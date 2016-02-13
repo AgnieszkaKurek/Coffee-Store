@@ -222,7 +222,21 @@ nav {
     font-size: 0.8em;
     width: 80px;  
 }
+     .addtocartbutton:hover,  .addtocartbutton:focus {
+         background-color: #512c0a;
+         -webkit-box-shadow:0 0 1px rgba(0,0,0, .75);
+         -moz-box-shadow:0 0 1px rgba(0,0,0, .75);
+         box-shadow: 0 0 1px rgba(0,0,0, .75);
+     }
+     
 
+footer{
+    clear: both;
+    width: 100%;
+    background-color: #5c5045;
+    margin: 20px 0px 20px;
+    padding: 5px;
+}
 .smalltext {
     font-size: 10px;
 }
