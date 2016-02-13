@@ -54,11 +54,16 @@ nav {
     font-size: 18px;
     float: left;
     padding-top: 12px;
+    color: white;
+    text-decoration: none;
 }
 
   
 .backgroundgradient{
-    background-color: #603813;
+    background: -webkit-linear-gradient(left, #603813, #341c05);
+    background: -o-linear-gradient(right, #603813, #341c05);
+    background: -moz-linear-gradient(right, #603813, #341c05);
+    background: linear-gradient(to right, #603813, #341c05);
 }
 
 .searchbox{
@@ -93,7 +98,7 @@ nav {
 
 #coffeeofthemonth {
     float: right;
-    width: 200px;
+    width: 290px;
 }
 
 #welcometext {
@@ -187,6 +192,7 @@ nav {
     font-size: 15px;
     color: #603813;
     font-weight: bold;
+    
 }
 
 .productarticleprice {
@@ -201,15 +207,20 @@ nav {
     color: #603813;
     margin-top: 5px;
 }
-
-
-
-footer {
-    clear: both;
-    width: 100%;
-    background-color: #5c5045;
-    margin: 20px 0px 20px;
-    padding: 5px;
+.addtocartbutton {
+    cursor: pointer;
+    padding: 4px 25px;
+    background: #603813;
+    border: 1px solid #381f09;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 4 px rgba(0, 0, 0, .75);
+    -moz-box-shadow: 0 0 4 px rgba(0, 0, 0, .75);
+    box-shadow:  0 0 4 px rgba(0, 0, 0, .75);
+    color: #f3f3f3;
+    font-size: 0.8em;
+    width: 80px;  
 }
 
 .smalltext {
