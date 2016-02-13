@@ -58,32 +58,32 @@
                    <p>
                        <label class="textlabel" for="lastNameInput">Last Name</label>
                        <input id="lastNameInput" name="LastName" type="text" required="required"
-                              class="textinput" size="10" maxlength="50"/>
+                              placeholder="Enter you last name" class="textinput" size="10" maxlength="50"/>
                    </p>
                    <p>
                        <label class="textlabel" for="emailInput">Email</label>
                        <input class="emailInput" name="Email" type="email" class="textinput"
-                        required="required"/>
+                        required="required" placeholder="Please enter your email address"/>
                    </p>
                    <p>
                         <label class="textlabel" for="streetInput">Street</label>
                         <input id="streetInput" name="Street" type="text" class="textinput"
-                         required="required"/>
+                         required="required" placeholder="Please enter your shipping street"/>
                     </p>
                     <p>
-                        <label class="textlabel" for="numerInput">Numer</label>
+                        <label class="textlabel" for="numberInput">Number</label>
                         <input id="numberInput" name="Number" type="text" class="textinput" 
-                         required="required"/>
+                         required="required" placeholder="Please enter your street nummber"/>
                     </p>
                     <p>
                         <label class="textlabel" for="zipInput">ZIP</label>
                         <input id="zipInput" name="ZIP" type="text" class="textinput" 
-                         required="required"/>
+                         required="required" placeholder="Please enter your zip code"/>
                     </p>
                     <p>
                         <label class="textlabel" for="cityInput">City</label>
                         <input id="cityInput" name="City" type="text" class="textinput" 
-                         required="required"/>
+                         required="required"placeholder="Please enter your city" />
                         
                     </p>
                     <p>
@@ -92,39 +92,43 @@
                         pattern="[a-za-z]{3}" required="required" />
                     </p>
                     <p>
-                        <label class="textlabel" for="phoneInput">Phone Numer</label>
+                        <label class="textlabel" for="phoneInput">Phone Number</label>
                         <input id="phoneInput" name="PhoneNumber" type="text" class="textinput" 
-                         required="required"/>
+                         required="required"placeholder="Please enter your phone number " />
                     </p>
                     <p>     
                          <label class="textlabel" for="blogInput">Blog</label>
-                        <input id="blogInput" name="Blog" type="text" class="textinput" />
+                        <input id="blogInput" name="Blog" type="text" class="textinput" 
+                          placeholder="Please enter your blog address if you have one"/>
                     </p>
                     <p>
                         <label class="textlabel" for="remarkInput">Remarks</label>
-                        <input id="remarkInput" name="Remarks" type="text" class="textinput" />
+                        <input id="remarkInput" name="Remarks" type="text" class="textinput"
+                        placeholder="Please enter your extra remarks you have here." />
                     </p>
                </div>
             </fieldset>
             <br/>
             <fieldset class="box">
                 <legend>You order</legend>
+                <div>
                 <p>
                     <label class="textlabel" for="deliveryDateInput">Requested delivery date</label>
                         <input id="deliveryDateInput" name="BirthData" class="textinput" 
-                        type="date" />
+                        type="date" placeholder="Enter the date" />
                 </p>
                 <p>
                     <label class="textlabel" for="colorInput">Wrapping paper color</label>
-                        <input id="colorInput" name="Color" type="color" class="textinput" />
+                        <input id="colorInput" name="Color" type="color" class="textinput"
+                        placeholder="Select a color" />
                 </p>
                 <p>
                    <label class="textlabel" for="bowInput">How many bows on the package?</label>
-                        <input id="bowInput" placeholder="Enter a value between 1 and 10" name="Bow"
+                        <input id="bowInput" placeholder="Enter a number" name="Bow"
                          type="number" class="textinput" 
                           min="1" max="10"/>
                 </p> 
-                
+                </div>
             </fieldset>
            <input type="submit" class="submitbutton" value="Place order"/>
            
