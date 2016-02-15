@@ -3,8 +3,31 @@ function addDnDHandlers() {
     
     var shoppingCartDropzone = document.getElementById("shoppingcart");
     
-    var shopingcart = document.querySelectorAll("#shoppingcart ul")[0];
+    var shoppingcart = document.querySelectorAll("#shoppingcart ul")[0];
     
+    var Cart = (function () {
+        this.coffees = new Array();
+    });
+    
+    var Coffee = (function (id, price) {
+       this.coffeeId = id; 
+       this.price = price;
+    });
+    
+    var currentCart = null;
+    currentCart = JSON.parse(localStorage.getItem('cart'));
+     if (!currentCart) {
+         createEmptyCart();
+     }
+     
+     UpdateShoppingCartUI();
+     currentCart.addCoffee = function (coffee){
+         currentCart.coffes.push(coffee);
+         
+         localStorage.setItem('cart', JSON.stringify(currentCart));
+     }
+    
+     
     
     for (var i = 0; i < coffeeimages.length; i++){
         coffeeimages[i].addEventListener("dragstart", function (ev){
@@ -28,7 +51,7 @@ function addDnDHandlers() {
         var coffeeId = ev.dataTransfer.getData("Text");
         var element = document.getElementById(coffeeId);
         
-        addCoffeeToShopingCart(element, coffeeId);
+        addCoffeeToShoppingCart(element, coffeeId);
         ev.stopPropagation();
        
         
@@ -36,13 +59,29 @@ function addDnDHandlers() {
             
         },false);
      
-     function addCoffeeToShopingCart(item, id) {
-         var html = id + "" + item.getAttribute("data-price");
+     function addCoffeeToShoppingCart(item, id) {
+         var price = item.getAttribute("data-price");
          
-         var liElement = document.createElement('li');
-         liElement.innerHTML = html;
-         shopingcart.appendChild(liElement);
+         var coffee = new Coffee(id, price);
+         currentCart.addCoffee(coffee);
          
+         UpdateShoppingCartUI();
+     } 
+     
+     function createEmptyCart() {
+         localStorage.clear();
+         localStorage.setItem("cart", JSON.stringify(new Cart ()));
+         currentCart= JSON.parse(localStorage.getItem("cart"));
+     }
+     
+     function UpdateShoppingCartUI() {
+         
+         shoppingcart.innerHTML = "";
+         for (var i = 0; i < currentCart.coffees.length; i++){
+             var liElement = document.createElement('li');
+             liElement.innerHTML = currentCart.coffees[i].coffeeId + " " + currentCart.coffees[i].price;
+             shoppingcart.appendChild(liElement);
+         }
      }
    
 }
