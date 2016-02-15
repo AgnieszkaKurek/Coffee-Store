@@ -77,11 +77,11 @@ function addDnDHandlers() {
      function UpdateShoppingCartUI() {
          
          shoppingcart.innerHTML = "";
-         for (var i = 0; i < currentCart.coffees.length; i++){
+         for (var i = 0; i < currentCart.coffees.length; i++) {
              var liElement = document.createElement('li');
              liElement.innerHTML = currentCart.coffees[i].coffeeId + " " + currentCart.coffees[i].price;
-             shoppingcart.appendChild(liElement);
+             shoppingcart.appendChild(liElement); 
          }
-     }
+     };
    
 }
