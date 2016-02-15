@@ -2,7 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8"/>
-    <title></title>
+    <title>Welcome to Joe's Coffee Store!</title>
     <link href="style.css" rel="stylesheet" type="text/css"/>
     <script src="dragAndDrop.js"></script>      
     
@@ -10,8 +10,35 @@
 <body>
     
     <header>
-        
-    <section class="allcoffees">
+         <div>
+            <a class="headerlogo" href="index.html">
+                <img src="logo.png" />
+            </a>
+            <span id="headername">Joe's Coffee Store</span>
+        </div>
+    
+     <header>
+    <nav class="backgroundgradient">
+        <ul>
+            <li><a class="navlink" href="index.html">Home</a></li>
+            <li><a class="navlink" href="blog.html">Blog</a></li>
+            <li><a class="navlink" href="allcoffees.html">Our coffees</a></li>
+            <li><a class="navlink" href="accessories.html">Accessories</a></li>
+            <li><a class="navlink" href="Gifts.html">Gifts</a></li>
+            <li><a class="navlink" href="findus.html">Find us</a></li>
+            <li><a class="navlink" href="checkout.html">Checkout</a></li>
+
+        </ul>
+    </nav>
+    
+    <div id="welcomeimage">
+        <img src="coffeeheader.jpg" />
+    </div>
+    <div id="coffeeofthemonth">
+        <img src="cotm.jpg" />
+    </div>
+
+              <section class="allcoffees">
         <header class="blockheader">
             <span>Espresso coffee beans</span>
         </header>
@@ -59,10 +86,11 @@
 
             </div>
         </article>
-   
-
-    
-    
-    
+    </section>
+    <div id="shoppingcart">
+        <header class="blockheader"><span>Shopping cart</span></header>
+        <ul></ul>
+    </div>
+     
 </body> 
 </html>
