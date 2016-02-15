@@ -115,6 +115,8 @@ nav {
     font-size: 12px;
     margin-top: 20px;
     margin-bottom: 20px;
+    column-count: 2;
+    -webkits-column-count:2;
     
 }
 
