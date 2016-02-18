@@ -1,6 +1,5 @@
 function createDrivingDirectionsMap() {
     if (navigator.geolocation) {
-        
         navigator.geolocation.getCurrentPosition(OnSuccess, OnError, {
             enableHighAccuracy: true,
             maximumAge: 1000,
@@ -8,7 +7,7 @@ function createDrivingDirectionsMap() {
         });
     }
     else {
-        document.getElementById(map).innerHTML = "No support for geolocation, we can't find you :(";
+        document.getElementById("map").innerHTML = "No support for geolocation, we can't find you :(";
     }
 };
 
@@ -19,13 +18,13 @@ function OnSuccess(position) {
     );
 };
 
-function OnError() {
-    var mapDiv = document.getElementById("map")
-    switch (error, code) {
+function OnError(error) {
+    var mapDiv = document.getElementById("map");
+    switch (error.code) {
         case error.PERMISSION_DENIED:
             mapDiv.innerHTML = "User denied the request for Geolocation."
             break;
-        case error,POSITION_UNAVAILABLE:
+        case error.POSITION_UNAVAILABLE:
             mapDiv.innerHTML = "Location information is unavailable."
             break;
         case error.TIMEOUT:
