@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8"/>
     <title></title>
-    <script src="~/Scripts/jquery.min.js ")"></script>
+   
     <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="videoplayer.js"></script>
     
 </head>
 <body>
@@ -14,8 +15,29 @@
                 <img src="logo.png"/>
                 </a>
                 <span id="headername">Joe's Coffee Store</span>
+                <input type="search" class="searchbox" placeholder="Search our store" />
         </div>
     </header>
+    <nav class="backgroundgradient">
+        <ul>
+            <li><a class="navlink" href="index.html">Home</a></li>
+            <li><a class="navlink" href="blog.html">Blog</a></li>
+            <li><a class="navlink" href="allcoffees.html">Our coffees</a></li>
+            <li><a class="navlink" href="accessories.html">Accessories</a></li>
+            <li><a class="navlink" href="Gifts.html">Gifts</a></li>
+            <li><a class="navlink" href="findus.html">Find us</a></li>
+            <li><a class="navlink" href="checkout.html">Checkout</a></li>
+
+        </ul>
+    </nav>
+
+    <div id="welcomeimage">
+        <img src="coffeeheader.jpg" />
+    </div>
+    <div id="coffeeofthemonth">
+        <img src="cotm.jpg" />
+    </div>
+    
     <section class="coffeedetails">
         <header class="blockheader"></header>
         <span>Coffee1</span>
@@ -28,13 +50,32 @@
            <p class="productarticleprice  ">€10</p>
         </div>
         <div>
-            <video width="320" height="240" class="coffevideoplayer" id="videoplayer" poster="Images/logo.pmg" autoplay= "autoplay" />
+            <video width="320" height="240" class="coffevideoplayer" id="videoplayer" poster="logo.png" autoplay= "autoplay">
             <source src="movie.mp4" type='video/mp4; codecs= "avc1.42E01E, mp4a.40.2"' />  
             <source src="movie.ogg" type='video/ogg; codecs= "theora, vorbis"' />
             Sadly your browser has no support for video...
+            <video/>
+           
+           <div id="controls">
+               <div id="errorDiv" style="color:Red;"></div>
+               <button id="slowerButton">Slower</button>
+               <button id="backButton">Rewind</button>
+               <button id="playButton">Play</button>
+               <button id="forwardButton">Forward</button>
+               <button id="fasterButton">Faster</button>
+               <button id="muteButton">Mute</button>
+               <br/><br/><br/>
+               
+           </div> 
+            
+            
+            
         </div>
         
     </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", initializeVideoPlayerControls, false);
+    </script>
     
     
     
