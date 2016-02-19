@@ -6,6 +6,7 @@
    
     <link href="style.css" rel="stylesheet" type="text/css"/>
     <script src="videoplayer.js"></script>
+    <script src="canvasChart.js"></script>
     
 </head>
 <body>
@@ -68,13 +69,18 @@
                
            </div> 
             
-            
-            
         </div>
-        
-    </section>
+     </section>
+     
+     <div id="sales Canvas Graph">  
+       <canvas id="bartChart" height="800" width="750">  
+           Sorry, your browser doesn't suppot canvas, therefore you can't see this chart!Upgrade to a new and better browser!
+       </canvas>
+     </div>
+     
     <script>
         document.addEventListener("DOMContentLoaded", initializeVideoPlayerControls, false);
+        document.addEventListener("DOMContentLoaded", drawChart, false);
     </script>
     
     
