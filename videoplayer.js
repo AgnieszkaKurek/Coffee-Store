@@ -4,7 +4,7 @@ function initializeVideoPlayerControls(){
     
     function playVideo(evt) {
         
-        button = evt.target;
+        var button = evt.target;
         if (video.paused) {
             video.play();
             button.textContent = "Pause";
@@ -26,6 +26,10 @@ function initializeVideoPlayerControls(){
         } catch (err) {
             displayError("Something went wrong...");
         }
+    }
+    
+    function displayError(message){
+        
     }
     
     document.getElementById("playButton").addEventListener("click", playVideo, false);
