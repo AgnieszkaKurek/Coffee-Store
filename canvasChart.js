@@ -12,23 +12,8 @@
  coffeeSales [10] = "Nov, 109";
  coffeeSales [11] = "Dec, 235";
  
-  function createAxis(context, startx, starty, endx, endy) {
-      context.beginPath();
-      context.moveTo(startx, starty);
-      context.lineTo(endx, endy);
-      context.closePath();
-      context.stroke();
-  }
   
-  function createBar(context, x, y, width, height) {
-      context.beginPath();
-      context.rect(x, y, width, height);
-      context.closePath();
-      context.stroke();
-      context.fill();
-  }
-  
-  function drawChart(params) {
+  function drawChart() {
       var canvas = document.getElementById('barChart');
       
       if (canvas && canvas.getContext) {
@@ -36,7 +21,7 @@
           createBarChart(context, coffeeSales, 30, 20, (canvas.height - 20), 50);
       } 
   }
-  function createBarChart(context, data, startx, barWidth, chartHeight) {
+function createBarChart(context, data, startX, barWidth, chartHeight, markDataIncrementsIn) {
      
      context.lineWidth = "1.2";
      var startY = 780;
@@ -44,7 +29,7 @@
      createAxis(context, startX, startY, startX, 30); //vertical axis 
      createAxis(context, startX, startY, 650, startY); //horizontal axis 
      
-     context.lineWidth = "0,0";
+     context.lineWidth = "0.0";
      var maxValue = 0;
      for (var i = 0; i<data.length; i++){
          var item = data[i].split(",");
@@ -59,6 +44,23 @@
          context.fillStyle = "black";
          context.fillText(itemName, 20 + startX + (i * barWidth) + i + (i * 30), chartHeight + 15,  200);
      }
+  }
+  
+  
+  function createAxis(context, startx, starty, endx, endy) {
+      context.beginPath();
+      context.moveTo(startx, starty);
+      context.lineTo(endx, endy);
+      context.closePath();
+      context.stroke();
+  }
+  
+  function createBar(context, x, y, width, height, fill) {
+      context.beginPath();
+      context.rect(x, y, width, height);
+      context.closePath();
+      context.stroke();
+      context.fill();
   }
   
   
