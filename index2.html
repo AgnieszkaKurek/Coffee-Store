@@ -1,0 +1,114 @@
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title>Joe's Coffee store</title>
+    
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    
+    
+        
+</head>
+<body>
+    <header >
+        <div>
+            <a class="headerlogo" href="index.html">
+                <img src="logo.png"/>
+            </a>
+            <span id="headername">Joe's Coffee Store</span>
+            <input type="search" class="searchbox" placeholder="Search our store"/>
+        </div>
+        </header>
+        
+        <nav class="backgroundgradient">
+      <ul>
+          <li><a class="navlink"  href="index.html">Home</a></li>
+          <li><a class="navlink"  href="blog.html">Blog</a></li>
+          <li><a class="navlink"  href="allcoffees.html">Our coffees</a></li>
+          <li><a class="navlink"  href="accesories.html">Accesories</a></li>
+          <li><a class="navlink"  href="Gifts.html">Gifts</a></li>
+          <li><a class="navlink"  href="findus.html">Find us</a></li>
+          <li><a class="navlink"  href="checkout.html">Checkout</a></li>
+      </ul>
+      </nav>
+        
+       
+    <div id="welcomeimage">
+        <img src="coffeeheader.jpg"/>
+    </div>
+    <div id="coffeeofthemonth">
+        <img src="cotm.jpg"/>
+    </div>
+    <section id="welcometext">
+        <header>Weckome to Joe's Coffee Store!</header>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia finibus magna, eget mollis eros porttitor quis. Mauris feugiat et arcu et posuere. Ut a urna imperdiet orci iaculis imperdiet non sit amet diam. 
+        <p><mark>Note that our store is closed on Christmas eve and Christmas day.</mark></p>
+        </span>
+    </section>
+    <aside id="events"> 
+        <header>Here's what happening!</header>
+            <ul>
+                 <li><a href="#">New Arabica coffee added</a></li>
+                 <li><a href="#">Store redecorated</a></li>
+                 <li><a href="#">New webside launched</a></li>
+            </ul>
+    </aside>
+    <section id="bestsellers">
+        <header>Bestsellers @ Joe's Coffee Store</header>
+        <section class="coffeebestsellers">
+          <header class="backgroundgradient">
+              Coffees
+          </header>
+          
+          
+          <svg height="200" width="200" >
+              <defs> 
+                  <filter id="f1" x="0" y="0"> 
+                      <feGaussianBlur
+                      in="SorceGraphic"
+                      stdDeviation="20" />
+                      </filter>  
+              </defs> 
+              <rect width="100" height="100"
+              stroce="green"  strocke-width="3"
+              fill="yellow" filter= "url(#f1)"/>
+              Sorry,SVG not supported
+              </svg>
+              
+              <svg height="500" widith="500">
+                  <defs>   
+                       <filter id="f1" x="0" y="0" widith="200%" height="200%" > 
+                           <feOffset result= "offOut" in="SourceAlpha" dx="20" dy="20"/>
+                           <feGaussianBlur
+                           result="blurOut"
+                           in="offOut"
+                           stedDeviation="10" 
+                           />
+                           
+                           <feBlend in="SorceGraphic"  in2="blurOut" mode="normal"/>
+                      </filter>
+                      </defs>
+                        <rect width="90" height="90"
+                         stroce="green"  strocke-width="3"
+                         fill="blue" filter= "url(#f1)"/>
+                         Sorry, SVG not supported
+                      
+                  
+                   
+              </svg>
+        
+       
+    
+    <footer>
+        <p>Our address is <address>65 New Street, 91234 Long Bean</address></p>
+        <p class="textconten">All side contents is copyright<a class="mainlink" href="http://www.joescoffeestore.com">Joe's Coffee Store</a></p>
+        <p class="smaltext">This page was generated on <time>09:25:04.123</time>.</p>  
+    </footer>
+    
+    <script src="myScript.js"></script>
+    
+    
+    
+    
+</body> 
+</html>
